@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Viewport */
+.carousel {
+  width: 80vw;
+  max-width: 900px;
+  overflow-x: scroll;   
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: none; 
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;        
+}
+.carousel:active {
+  cursor: grabbing;
+}
+
+/* Track */
+.track {
+  display: flex;
+  gap: 20px;
+  user-select: none;
+}
+
+/* Images */
+.track img {
+  width: 260px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  pointer-events: none;
+}
